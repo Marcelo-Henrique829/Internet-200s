@@ -17,6 +17,7 @@
   ],
   "ResourceOrderSettings":[
     {"name":"obj_parede","order":1,"path":"objects/obj_parede/obj_parede.yy",},
+    {"name":"spr_arrow_cursor","order":9,"path":"sprites/spr_arrow_cursor/spr_arrow_cursor.yy",},
     {"name":"spr_colsion","order":4,"path":"sprites/spr_colsion/spr_colsion.yy",},
     {"name":"spr_explore_bigger","order":8,"path":"sprites/spr_explore_bigger/spr_explore_bigger.yy",},
     {"name":"spr_exploree","order":7,"path":"sprites/spr_exploree/spr_exploree.yy",},
@@ -24,6 +25,7 @@
     {"name":"spr_player_temp","order":3,"path":"sprites/spr_player_temp/spr_player_temp.yy",},
     {"name":"spr_wallpapaer","order":2,"path":"sprites/spr_wallpapaer/spr_wallpapaer.yy",},
     {"name":"spr_windows_bar","order":5,"path":"sprites/spr_windows_bar/spr_windows_bar.yy",},
+    {"name":"Sprite11","order":10,"path":"sprites/Sprite11/Sprite11.yy",},
     {"name":"Sprite2","order":1,"path":"sprites/Sprite2/Sprite2.yy",},
   ],
 }
