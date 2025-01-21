@@ -24,6 +24,7 @@
     {"name":"spr_player_temp","order":3,"path":"sprites/spr_player_temp/spr_player_temp.yy",},
     {"name":"spr_wallpapaer","order":2,"path":"sprites/spr_wallpapaer/spr_wallpapaer.yy",},
     {"name":"spr_windows_bar","order":5,"path":"sprites/spr_windows_bar/spr_windows_bar.yy",},
+    {"name":"Sprite10","order":9,"path":"sprites/Sprite10/Sprite10.yy",},
     {"name":"Sprite2","order":1,"path":"sprites/Sprite2/Sprite2.yy",},
   ],
 }
