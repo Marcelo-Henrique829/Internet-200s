@@ -5,4 +5,7 @@ window_set_cursor(cr_none);
 
  state = 0
  
+ vspd = 0;
+ hspd = 0;
+ 
  icones = [obj_explore,obj_lixo]

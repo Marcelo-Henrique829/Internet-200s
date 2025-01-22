@@ -6,4 +6,4 @@ jump_force = 12;
 
 
 state = "iddle";
-colisores = [obj_parede];
+colisores = [obj_parede,obj_cursor];

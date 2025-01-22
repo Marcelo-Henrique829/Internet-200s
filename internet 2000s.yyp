@@ -35,7 +35,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.8.1.171",
+    "IDEVersion":"2024.11.0.179",
   },
   "name":"internet 2000s",
   "resources":[
@@ -51,10 +51,12 @@
     {"id":{"name":"spr_colsion","path":"sprites/spr_colsion/spr_colsion.yy",},},
     {"id":{"name":"spr_explore_bigger","path":"sprites/spr_explore_bigger/spr_explore_bigger.yy",},},
     {"id":{"name":"spr_exploree","path":"sprites/spr_exploree/spr_exploree.yy",},},
+    {"id":{"name":"spr_folder","path":"sprites/spr_folder/spr_folder.yy",},},
     {"id":{"name":"spr_hand_cursor","path":"sprites/spr_hand_cursor/spr_hand_cursor.yy",},},
     {"id":{"name":"spr_lixeria","path":"sprites/spr_lixeria/spr_lixeria.yy",},},
     {"id":{"name":"spr_moldura","path":"sprites/spr_moldura/spr_moldura.yy",},},
     {"id":{"name":"spr_player_temp","path":"sprites/spr_player_temp/spr_player_temp.yy",},},
+    {"id":{"name":"spr_small_folder","path":"sprites/spr_small_folder/spr_small_folder.yy",},},
     {"id":{"name":"spr_stickman_iddle","path":"sprites/spr_stickman_iddle/spr_stickman_iddle.yy",},},
     {"id":{"name":"spr_stickman_jump","path":"sprites/spr_stickman_jump/spr_stickman_jump.yy",},},
     {"id":{"name":"spr_stickman_run","path":"sprites/spr_stickman_run/spr_stickman_run.yy",},},
