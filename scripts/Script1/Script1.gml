@@ -29,3 +29,19 @@ function scr_colision(_objetos = []){
 	}
 
 }
+	
+	
+function scr_end_animation(_sprite)
+{
+	if(sprite_index == _sprite)
+	{
+		if(image_index>= image_number-1)
+		{
+			return 1
+		}
+		else
+		{
+			return 0
+		}
+	}
+}

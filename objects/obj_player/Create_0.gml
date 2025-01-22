@@ -1,8 +1,9 @@
 vspd = 0;
 hspd = 0;
-grv = 0.7
-spd = 5
+grv = 0.7;
+spd = 5;
+jump_force = 12;
 
-colisores = [obj_parede]
 
-window_set_cursor(cr_none)
+state = "iddle";
+colisores = [obj_parede];
