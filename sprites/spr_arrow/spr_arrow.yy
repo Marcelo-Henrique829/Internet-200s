@@ -1,10 +1,10 @@
 {
   "$GMSprite":"",
   "%Name":"spr_arrow",
-  "bboxMode":0,
+  "bboxMode":2,
   "bbox_bottom":19,
-  "bbox_left":1,
-  "bbox_right":18,
+  "bbox_left":5,
+  "bbox_right":15,
   "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
