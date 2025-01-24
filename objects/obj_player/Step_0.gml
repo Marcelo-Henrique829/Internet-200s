@@ -2,7 +2,7 @@
 
 var _esquerda = keyboard_check(ord("A"))
 var _direita = keyboard_check(ord("D"))
-var _jump = keyboard_check_direct(vk_space)
+var _jump = keyboard_check_pressed (vk_space)
 
 #endregion
 
@@ -88,7 +88,7 @@ switch(state)
 		vspd = lengthdir_y(hit_strong,global.hit_dirv)
 		if(hit_time<=0)
 		{
-			state = "iddle"
+			state = "morte"
 			hit_time = hit_cooldown
 		}
 		
@@ -96,15 +96,33 @@ switch(state)
 	break;
 	
 	case "pendurado":
+	{
 	
 				
 			vspd = 0;
 			sprite_index = spr_stickman_pendurado
+			if(_jump)
+			{
+					vspd -= jump_force
+					hspd = _move * spd
+					state = "jump"
+					
+			}
 	
-	
+	}
 	break;
 	
 	
+	case "morte":
+	{
+		sprite_index = spr_stickman_destroy
+		
+		if(image_index>=image_number-1)
+		{
+			game_restart()
+		}
+	}
+	break;
 	
 }
 
