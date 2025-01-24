@@ -40,8 +40,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"grupo2",
-    "path":"folders/Sprites/misc/grupo2.yy",
+    "name":"popup",
+    "path":"folders/Sprites/misc/popup.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
