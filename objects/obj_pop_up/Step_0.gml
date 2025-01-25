@@ -8,7 +8,14 @@ if(place_meeting(x,y,obj_cursor))
 	if(mouse_check_button_pressed(mb_left))
 	{
 		state = "hit"
+		life--
 	}
+}
+
+
+if(life<=0)
+{
+	state = "die"
 }
 
 
@@ -54,6 +61,20 @@ switch(state)
 		}
 	}
 	break;
+	
+	case "die":
+	{
+		sprite_index = spr_popup_destroy
+		if(image_index>=image_number-1)
+		{
+			instance_destroy()
+		}
+		
+	}
+	break;
+	
+	
+	
 }
 
 show_debug_message(life)
