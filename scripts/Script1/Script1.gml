@@ -45,3 +45,49 @@ function scr_end_animation(_sprite)
 		}
 	}
 }
+
+global.hit_dirh = 0;
+global.hit_dirv = 0;
+
+global.pendurado = 0
+
+function scr_pou()
+{
+	if(obj_player.x>= obj_pop_up.x)
+	{
+		global.hit_dirh = 0;
+		
+	}
+	else
+	{
+		global.hit_dirh = 180
+	}
+	
+	if(obj_player.y>= obj_pop_up.y)
+	{
+		global.hit_dirv = 270
+	}
+	else
+	{
+		global.hit_dirv = 90
+	}
+	
+	
+}
+
+
+
+function scr_pou_2()
+{
+	if(obj_player.x>= obj_parede.x)
+	{
+		global.pendurado = 180
+		
+	}
+	else
+	{
+		global.pendurado = 0;
+	}
+	
+
+}
