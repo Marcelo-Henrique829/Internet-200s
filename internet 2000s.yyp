@@ -8,7 +8,7 @@
     "children":[],
     "name":"Default",
   },
-  "defaultScriptType":0,
+  "defaultScriptType":1,
   "Folders":[
     {"$GMFolder":"","%Name":"Anotações","folderPath":"folders/Anotações.yy","name":"Anotações","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Caminhos","folderPath":"folders/Caminhos.yy","name":"Caminhos","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -18,6 +18,7 @@
     {"$GMFolder":"","%Name":"Fontes","folderPath":"folders/Fontes.yy","name":"Fontes","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Linhas do tempo","folderPath":"folders/Linhas do tempo.yy","name":"Linhas do tempo","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Objetos","folderPath":"folders/Objetos.yy","name":"Objetos","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"efeitos","folderPath":"folders/Objetos/efeitos.yy","name":"efeitos","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"icones","folderPath":"folders/Objetos/icones.yy","name":"icones","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"inimigos","folderPath":"folders/Objetos/inimigos.yy","name":"inimigos","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"player","folderPath":"folders/Objetos/player.yy","name":"player","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -43,7 +44,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.8.1.171",
+    "IDEVersion":"2024.11.0.179",
   },
   "name":"internet 2000s",
   "resources":[
@@ -57,6 +58,7 @@
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
     {"id":{"name":"obj_pop_up","path":"objects/obj_pop_up/obj_pop_up.yy",},},
     {"id":{"name":"obj_popup2","path":"objects/obj_popup2/obj_popup2.yy",},},
+    {"id":{"name":"Obj_tremetala","path":"objects/Obj_tremetala/Obj_tremetala.yy",},},
     {"id":{"name":"rm_aero_green","path":"rooms/rm_aero_green/rm_aero_green.yy",},},
     {"id":{"name":"rm_debug","path":"rooms/rm_debug/rm_debug.yy",},},
     {"id":{"name":"rm_ponpon","path":"rooms/rm_ponpon/rm_ponpon.yy",},},
@@ -108,8 +110,8 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
-    {"roomId":{"name":"rm_debug","path":"rooms/rm_debug/rm_debug.yy",},},
     {"roomId":{"name":"rm_windows_home","path":"rooms/rm_windows_home/rm_windows_home.yy",},},
+    {"roomId":{"name":"rm_debug","path":"rooms/rm_debug/rm_debug.yy",},},
     {"roomId":{"name":"rm_ponpon","path":"rooms/rm_ponpon/rm_ponpon.yy",},},
     {"roomId":{"name":"rm_aero_green","path":"rooms/rm_aero_green/rm_aero_green.yy",},},
   ],

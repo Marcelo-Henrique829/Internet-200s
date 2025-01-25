@@ -82,6 +82,7 @@ switch(state)
 	
 	case "hit":
 	{
+		Obj_tremetala.treme = 20;
 		hit_time--
 		sprite_index = spr_stickman_hit
 		hspd = lengthdir_x(hit_strong,global.hit_dirh)

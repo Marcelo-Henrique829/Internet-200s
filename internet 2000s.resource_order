@@ -8,6 +8,7 @@
     {"name":"Fontes","order":4,"path":"folders/Fontes.yy",},
     {"name":"Linhas do tempo","order":5,"path":"folders/Linhas do tempo.yy",},
     {"name":"Objetos","order":6,"path":"folders/Objetos.yy",},
+    {"name":"efeitos","order":10,"path":"folders/Objetos/efeitos.yy",},
     {"name":"icones","order":2,"path":"folders/Objetos/icones.yy",},
     {"name":"inimigos","order":7,"path":"folders/Objetos/inimigos.yy",},
     {"name":"player","order":8,"path":"folders/Objetos/player.yy",},
