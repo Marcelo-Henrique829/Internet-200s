@@ -8,4 +8,4 @@ window_set_cursor(cr_none);
  vspd = 0;
  hspd = 0;
  
- icones = [obj_explore,obj_lixo]
+ icones = [obj_explore,obj_lixo,obj_pop_up]
