@@ -1,9 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"obj_parede",
+  "%Name":"obj_par_colisor",
   "eventList":[],
   "managed":true,
-  "name":"obj_parede",
+  "name":"obj_par_colisor",
   "overriddenProperties":[],
   "parent":{
     "name":"colisores",
@@ -27,10 +27,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_parede",
-    "path":"sprites/spr_parede/spr_parede.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

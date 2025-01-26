@@ -7,9 +7,12 @@
   "overriddenProperties":[],
   "parent":{
     "name":"icones",
-    "path":"folders/Objetos/icones.yy",
+    "path":"folders/Objetos/colisores/icones.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_par_colisor",
+    "path":"objects/obj_par_colisor/obj_par_colisor.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

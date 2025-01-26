@@ -3,7 +3,7 @@
   "%Name":"spr_stickman_iddle",
   "bboxMode":2,
   "bbox_bottom":31,
-  "bbox_left":12,
+  "bbox_left":13,
   "bbox_right":22,
   "bbox_top":1,
   "collisionKind":1,

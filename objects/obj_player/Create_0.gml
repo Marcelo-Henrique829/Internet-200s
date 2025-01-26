@@ -6,7 +6,7 @@ jump_force = 15;
 
 
 state = "iddle";
-colisores = [obj_parede];
+colisores = [obj_parede,obj_grude,obj_par_colisor];
 
 
 inimigo = [obj_pop_up]
@@ -20,3 +20,4 @@ hit_strong = 10
 
 
 #endregion
+
