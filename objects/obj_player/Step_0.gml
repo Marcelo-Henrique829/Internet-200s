@@ -109,6 +109,11 @@ switch(state)
 					state = "jump"
 					
 			}
+			
+			if(_hit)
+			{
+				state  = "hit"
+			}
 	
 	}
 	break;

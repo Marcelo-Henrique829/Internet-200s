@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-scr_pou()
+scr_pou(obj_pop_up)
 
 
 if(place_meeting(x,y,obj_cursor))
@@ -24,6 +24,8 @@ switch(state)
 	case "apear":
 	{
 		sprite_index = spr_popup_apear
+		
+		
 		if(image_index>=image_number-1)
 		{
 			state = "iddle"
@@ -33,11 +35,18 @@ switch(state)
 	
 	case "iddle":
 	{
+		var _rI = random_range(50,200)
+		var _rII = random_range(300,500)
+		
+		
+		
 		sprite_index = spr_pop_up
-		if(distance_to_object(obj_player)>300)
+		
+		
+		if(distance_to_object(obj_player)>_rII)
 		{
-			x = obj_player.x + sign(obj_player.hspd*-1) * 50
-			y = obj_player.y + sign(obj_player.vspd*-1) * 50
+			x = obj_player.x + sign(obj_player.hspd*-1) * _rI
+			y = obj_player.y + sign(obj_player.vspd*-1) * _rI
 			state = "apear"
 		}
 	}
@@ -46,6 +55,7 @@ switch(state)
 	case "hit":
 	{
 		sprite_index = spr_popup_hit
+		
 		
 		if(image_index>=image_number-1)
 		{

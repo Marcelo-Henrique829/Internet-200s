@@ -37,8 +37,8 @@
     "path":"sprites/spr_stickman_iddle/spr_stickman_iddle.yy",
   },
   "spriteMaskId":{
-    "name":"spr_stickman_iddle",
-    "path":"sprites/spr_stickman_iddle/spr_stickman_iddle.yy",
+    "name":"spr_player_colision",
+    "path":"sprites/spr_player_colision/spr_player_colision.yy",
   },
   "visible":true,
 }

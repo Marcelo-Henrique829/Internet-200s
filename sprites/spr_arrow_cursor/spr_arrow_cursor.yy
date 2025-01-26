@@ -26,7 +26,7 @@
   "origin":0,
   "parent":{
     "name":"cursores",
-    "path":"folders/Sprites/cursores.yy",
+    "path":"folders/cursores.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

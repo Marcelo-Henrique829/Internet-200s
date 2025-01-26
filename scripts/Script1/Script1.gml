@@ -51,9 +51,9 @@ global.hit_dirv = 0;
 
 global.pendurado = 0
 
-function scr_pou()
+function scr_pou(_obj)
 {
-	if(obj_player.x>= obj_pop_up.x)
+	if(obj_player.x>= _obj.x)
 	{
 		global.hit_dirh = 0;
 		
@@ -63,7 +63,7 @@ function scr_pou()
 		global.hit_dirh = 180
 	}
 	
-	if(obj_player.y>= obj_pop_up.y)
+	if(obj_player.y>= _obj.y)
 	{
 		global.hit_dirv = 270
 	}
