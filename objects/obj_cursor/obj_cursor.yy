@@ -11,7 +11,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"icones",
-    "path":"folders/Objetos/icones.yy",
+    "path":"folders/Objetos/colisores/icones.yy",
   },
   "parentObjectId":null,
   "persistent":false,

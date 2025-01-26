@@ -46,7 +46,7 @@ switch(state)
 			state = "hit"
 		}
 		
-		if(!_chao and place_meeting(x+sign(hspd),y,colisores))
+		if(!_chao and place_meeting(x+sign(hspd),y,obj_grude))
 		{
 			state = "pendurado"
 		}
@@ -71,7 +71,7 @@ switch(state)
 		}
 		
 		
-		if(!_chao and place_meeting(x+sign(hspd),y,colisores))
+		if(!_chao and place_meeting(x+sign(hspd),y,obj_grude))
 		{
 			state = "pendurado"
 		}
