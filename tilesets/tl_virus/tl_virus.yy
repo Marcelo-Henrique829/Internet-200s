@@ -1,0 +1,42 @@
+{
+  "$GMTileSet":"v1",
+  "%Name":"tl_virus",
+  "autoTileSets":[],
+  "macroPageTiles":{
+    "SerialiseHeight":14,
+    "SerialiseWidth":11,
+    "TileCompressedData":[
+      -59,0,5,15,16,17,18,19,-17,0,4,39,40,41,42,-23,0,2,79,80,-5,0,1,76,-23,0,4,100,101,102,103,-7,0,4,112,
+      113,114,115,
+    ],
+    "TileDataFormat":1,
+  },
+  "name":"tl_virus",
+  "out_columns":50,
+  "out_tilehborder":2,
+  "out_tilevborder":2,
+  "parent":{
+    "name":"tile set",
+    "path":"folders/tile set.yy",
+  },
+  "resourceType":"GMTileSet",
+  "resourceVersion":"2.0",
+  "spriteId":{
+    "name":"spr_tile_virusplataforma",
+    "path":"sprites/spr_tile_virusplataforma/spr_tile_virusplataforma.yy",
+  },
+  "spriteNoExport":false,
+  "textureGroupId":{
+    "name":"Default",
+    "path":"texturegroups/Default",
+  },
+  "tileAnimationFrames":[],
+  "tileAnimationSpeed":15.0,
+  "tileHeight":4,
+  "tilehsep":0,
+  "tilevsep":0,
+  "tileWidth":4,
+  "tilexoff":0,
+  "tileyoff":0,
+  "tile_count":2500,
+}

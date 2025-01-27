@@ -9,7 +9,7 @@ state = "iddle";
 colisores = [obj_parede,obj_grude,obj_par_colisor];
 
 
-inimigo = [obj_pop_up,obj_aviso]
+inimigo = [obj_pop_up,obj_aviso,obj_xis]
 
 
 #region hit
