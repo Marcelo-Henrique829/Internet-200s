@@ -7,7 +7,6 @@
     {"name":"Curvas da animação","order":9,"path":"folders/Curvas da animação.yy",},
     {"name":"Extensões","order":11,"path":"folders/Extensões.yy",},
     {"name":"Fontes","order":4,"path":"folders/Fontes.yy",},
-    {"name":"tile set","order":14,"path":"folders/tile set.yy",},
     {"name":"Linhas do tempo","order":5,"path":"folders/Linhas do tempo.yy",},
     {"name":"Objetos","order":6,"path":"folders/Objetos.yy",},
     {"name":"butao","order":14,"path":"folders/Objetos/butao.yy",},
@@ -30,6 +29,7 @@
     {"name":"sites","order":19,"path":"folders/Sprites/sites.yy",},
     {"name":"Aerogreen","order":1,"path":"folders/Sprites/sites/Aerogreen.yy",},
     {"name":"tile_set","order":22,"path":"folders/Sprites/tile_set.yy",},
+    {"name":"tile set","order":14,"path":"folders/tile set.yy",},
   ],
   "ResourceOrderSettings":[
     {"name":"obj_aviso","order":5,"path":"objects/obj_aviso/obj_aviso.yy",},
