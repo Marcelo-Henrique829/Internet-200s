@@ -1,17 +1,17 @@
 {
   "$GMObject":"",
-  "%Name":"obj_zip",
+  "%Name":"obj_note_pad",
   "eventList":[],
   "managed":true,
-  "name":"obj_zip",
+  "name":"obj_note_pad",
   "overriddenProperties":[],
   "parent":{
     "name":"icones",
     "path":"folders/Objetos/colisores/icones.yy",
   },
   "parentObjectId":{
-    "name":"obj_grude",
-    "path":"objects/obj_grude/obj_grude.yy",
+    "name":"obj_par_colisor",
+    "path":"objects/obj_par_colisor/obj_par_colisor.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_zip",
-    "path":"sprites/spr_zip/spr_zip.yy",
+    "name":"spr_notepad",
+    "path":"sprites/spr_notepad/spr_notepad.yy",
   },
   "spriteMaskId":null,
   "visible":true,

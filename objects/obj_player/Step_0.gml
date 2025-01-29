@@ -125,7 +125,7 @@ switch(state)
 		
 		if(image_index>=image_number-1)
 		{
-			game_restart()
+			room_restart()
 		}
 	}
 	break;
