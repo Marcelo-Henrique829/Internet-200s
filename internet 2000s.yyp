@@ -195,9 +195,9 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
-    {"roomId":{"name":"rm_tuturial","path":"rooms/rm_tuturial/rm_tuturial.yy",},},
     {"roomId":{"name":"rm_ponpon","path":"rooms/rm_ponpon/rm_ponpon.yy",},},
     {"roomId":{"name":"rm_windows_home","path":"rooms/rm_windows_home/rm_windows_home.yy",},},
+    {"roomId":{"name":"rm_tuturial","path":"rooms/rm_tuturial/rm_tuturial.yy",},},
     {"roomId":{"name":"rm_debug","path":"rooms/rm_debug/rm_debug.yy",},},
     {"roomId":{"name":"rm_menu","path":"rooms/rm_menu/rm_menu.yy",},},
     {"roomId":{"name":"rm_aero_green","path":"rooms/rm_aero_green/rm_aero_green.yy",},},
