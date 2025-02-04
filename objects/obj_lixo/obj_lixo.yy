@@ -6,8 +6,8 @@
   "name":"obj_lixo",
   "overriddenProperties":[],
   "parent":{
-    "name":"icones",
-    "path":"folders/Objetos/colisores/icones.yy",
+    "name":"plataformas",
+    "path":"folders/Objetos/colisores/icones/plataformas.yy",
   },
   "parentObjectId":{
     "name":"obj_par_colisor",

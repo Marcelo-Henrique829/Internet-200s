@@ -53,7 +53,7 @@
   "origin":4,
   "parent":{
     "name":"icones",
-    "path":"folders/Sprites/inimigos/icones.yy",
+    "path":"folders/Sprites/icones.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

@@ -10,8 +10,8 @@
     "path":"folders/Objetos/colisores/icones.yy",
   },
   "parentObjectId":{
-    "name":"obj_par_colisor",
-    "path":"objects/obj_par_colisor/obj_par_colisor.yy",
+    "name":"obj_grude",
+    "path":"objects/obj_grude/obj_grude.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,

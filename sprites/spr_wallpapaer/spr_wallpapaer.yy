@@ -2,9 +2,9 @@
   "$GMSprite":"",
   "%Name":"spr_wallpapaer",
   "bboxMode":0,
-  "bbox_bottom":309,
+  "bbox_bottom":791,
   "bbox_left":0,
-  "bbox_right":435,
+  "bbox_right":1407,
   "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -16,7 +16,7 @@
   ],
   "gridX":0,
   "gridY":0,
-  "height":310,
+  "height":792,
   "HTile":false,
   "layers":[
     {"$GMImageLayer":"","%Name":"9c32a4de-5c46-4df1-bf75-006ea9ff75b6","blendMode":0,"displayName":"default","isLocked":false,"name":"9c32a4de-5c46-4df1-bf75-006ea9ff75b6","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
@@ -86,5 +86,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":436,
+  "width":1408,
 }

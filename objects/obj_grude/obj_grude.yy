@@ -6,8 +6,8 @@
   "name":"obj_grude",
   "overriddenProperties":[],
   "parent":{
-    "name":"colisores",
-    "path":"folders/Objetos/colisores.yy",
+    "name":"icones",
+    "path":"folders/Objetos/colisores/icones.yy",
   },
   "parentObjectId":null,
   "persistent":false,

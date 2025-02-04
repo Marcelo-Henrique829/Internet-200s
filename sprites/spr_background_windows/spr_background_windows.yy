@@ -2,9 +2,9 @@
   "$GMSprite":"",
   "%Name":"spr_background_windows",
   "bboxMode":0,
-  "bbox_bottom":575,
+  "bbox_bottom":791,
   "bbox_left":0,
-  "bbox_right":1023,
+  "bbox_right":1407,
   "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -16,7 +16,7 @@
   ],
   "gridX":0,
   "gridY":0,
-  "height":576,
+  "height":792,
   "HTile":false,
   "layers":[
     {"$GMImageLayer":"","%Name":"6e7af0f9-c056-4ef5-addb-24312e04d534","blendMode":0,"displayName":"default","isLocked":false,"name":"6e7af0f9-c056-4ef5-addb-24312e04d534","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
@@ -26,7 +26,7 @@
   "origin":0,
   "parent":{
     "name":"cursores",
-    "path":"folders/cursores.yy",
+    "path":"folders/Sprites/cursores.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
@@ -86,5 +86,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":1024,
+  "width":1408,
 }

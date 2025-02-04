@@ -8,8 +8,8 @@
   "name":"obj_aviso",
   "overriddenProperties":[],
   "parent":{
-    "name":"icones",
-    "path":"folders/Objetos/colisores/icones.yy",
+    "name":"plataformas",
+    "path":"folders/Objetos/colisores/icones/plataformas.yy",
   },
   "parentObjectId":null,
   "persistent":false,

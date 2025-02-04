@@ -2,7 +2,7 @@
 
 var _esquerda = keyboard_check(ord("A"))
 var _direita = keyboard_check(ord("D"))
-var _jump = keyboard_check_pressed (vk_space)
+var _jump = keyboard_check(vk_space)
 
 #endregion
 
@@ -17,7 +17,7 @@ if(hspd!=0)
 	image_xscale = sign(hspd)
 }
 
-
+coyte()
 
 switch(state)
 {
@@ -34,7 +34,9 @@ switch(state)
 		}
 
 		
-		if(_chao and _jump)
+		
+		
+		if(coyte_time  and _jump)
 		{
 			vspd -= jump_force
 			
@@ -45,6 +47,8 @@ switch(state)
 		{
 			state = "hit"
 		}
+		
+		
 		
 		if(!_chao and place_meeting(x+sign(hspd),y,obj_grude))
 		{
@@ -75,6 +79,7 @@ switch(state)
 		{
 			state = "pendurado"
 		}
+
 		
 	}
 	break;
@@ -82,6 +87,8 @@ switch(state)
 	
 	case "hit":
 	{
+		
+		morte = 1
 		Obj_tremetala.treme = 20;
 		hit_time--
 		sprite_index = spr_stickman_hit
@@ -118,20 +125,68 @@ switch(state)
 	}
 	break;
 	
-	
 	case "morte":
 	{
 		sprite_index = spr_stickman_destroy
+
+		
 		
 		if(image_index>=image_number-1)
 		{
-			game_restart()
+			room_restart()
 		}
+	}
+	break;
+	
+	case "apear":
+	{
+		hspd = 0;
+		
+		sprite_index = spr_stickman_apear
+		if(scr_end_animation(spr_stickman_apear))
+		{
+			state = "iddle"
+		}
+		
+		
+	}
+	break;
+	
+	
+	case"pre_trampolin":
+	{
+		state = "trampolin"
+	}
+	break;
+	
+	case "trampolin":
+	{
+		trampolin_time--;
+		
+		hspd = lengthdir_x(trampolin.force,trampolin.image_angle);
+		vspd = lengthdir_y(trampolin.force,trampolin.image_angle);
+		
+		if(_hit) state = "hit";
+		
+		if(trampolin_time<=0)
+		{
+			state = "iddle";
+			trampolin_time = trampolin_def_time;
+		}
+		
 	}
 	break;
 	
 }
 
-show_debug_message(state)
+
+if(morte)
+{
+	state = "morte"
+}
+show_debug_message(trampolin)
+
+
+
 
  

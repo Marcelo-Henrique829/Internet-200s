@@ -2,10 +2,10 @@ vspd = 0;
 hspd = 0;
 grv = 0.7;
 spd = 5;
-jump_force = 15;
+jump_force = 12;
 
-
-state = "iddle";
+morte = 0;
+state = "apear";
 colisores = [obj_parede,obj_grude,obj_par_colisor];
 
 
@@ -20,4 +20,35 @@ hit_strong = 10
 
 
 #endregion
+
+
+#region coyote
+
+
+coyote_def_time = 20;
+coyte_time = coyote_def_time
+
+ coyte = function()
+ {
+	if(place_meeting(x,y+1,colisores))
+	{
+		coyte_time = coyote_def_time
+	}
+	else
+	{
+		coyte_time--
+	}
+ }
+
+#endregion
+
+#region trampolin
+
+trampolin_def_time = 10;
+trampolin_time = trampolin_def_time;
+
+trampolin = 0
+
+#endregion
+
 
