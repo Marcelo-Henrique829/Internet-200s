@@ -2,6 +2,9 @@ vspd = 0;
 hspd = 0;
 grv = 0.7;
 spd = 5;
+def_spd = 5;
+dir = 0;
+spd_max = 10;
 jump_force = 12;
 
 morte = 0;
