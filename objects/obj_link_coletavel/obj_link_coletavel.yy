@@ -34,8 +34,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_link_coletavel",
-    "path":"sprites/spr_link_coletavel/spr_link_coletavel.yy",
+    "name":"spr_link",
+    "path":"sprites/spr_link/spr_link.yy",
   },
   "spriteMaskId":null,
   "visible":true,

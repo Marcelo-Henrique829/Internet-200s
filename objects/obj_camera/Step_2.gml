@@ -1,5 +1,10 @@
-/// @description Insert description here
+             /// @description Insert description here
 // You can write your code in this editor
+
+global.view_height = resolution_height / resolution_scale; //definindo o tamanho do height da camera
+global.view_width = resolution_width / resolution_scale; // definindo o tamanho do width da camera
+
+
 camera_set_view_size(view_camera[0],global.view_width, global.view_height); //aplicando o tamanho definido para a camera
 
 if (instance_exists(alvo)){
@@ -15,5 +20,6 @@ if (instance_exists(alvo)){
 		camera_set_view_pos(view_camera[0], lerp(cx, x1, vel_cam) , lerp(cy, y1, vel_cam)); //comando que vai fazer a camera seguir o jogador
 		
 }
+
 
 

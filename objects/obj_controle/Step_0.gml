@@ -16,3 +16,14 @@ if(gerar_inimigos and alarm[0]<=0)
 	}
 }
 
+
+show_debug_message(obj_camera.resolution_scale)
+
+if sla
+{
+	obj_camera.resolution_scale = lerp(obj_camera.resolution_scale,1.1,0.1)
+
+}
+
+
+

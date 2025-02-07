@@ -13,22 +13,24 @@ var _move = _direita - _esquerda
 
 var _hit = place_meeting(x,y,inimigo)
 
-if(hspd!=0)
+if(hspd!=0) //este código faz a sprite do player virar para esquerda e para direita
 {
 	image_xscale = sign(hspd)
 }
 
-if(_fast and _move!=0)
+
+if(_fast and _move!=0) //para o player correr
 {
-	spd = lerp(spd,spd_max,0.01)
-	
+	spd = spd_max
+
 }
 else
 {
 	spd = def_spd;
+	
 }
 
-coyte()
+coyte() //a função que roda o código do efeito coyote
 
 switch(state)
 {

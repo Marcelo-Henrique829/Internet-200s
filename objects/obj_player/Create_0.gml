@@ -1,17 +1,18 @@
-vspd = 0;
-hspd = 0;
-grv = 0.7;
-spd = 5;
-def_spd = 5;
-dir = 0;
-spd_max = 10;
-jump_force = 12;
+
+#region movimentação
+	vspd = 0;
+	hspd = 0;
+	grv = 0.7;
+	spd = 5;
+	def_spd = 5;
+	dir = 0;
+	spd_max = 7;
+	jump_force = 12;
+#endregion
 
 morte = 0;
 state = "apear";
 colisores = [obj_parede,obj_grude,obj_par_colisor];
-
-
 inimigo = [obj_pop_up,obj_aviso,obj_xis]
 
 
@@ -53,5 +54,7 @@ trampolin_time = trampolin_def_time;
 trampolin = 0
 
 #endregion
+
+
 
 
