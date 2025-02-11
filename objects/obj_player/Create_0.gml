@@ -8,13 +8,19 @@
 	dir = 0;
 	spd_max = 7;
 	jump_force = 12;
+	
+	instance_create_layer(0,0,layer,obj_input_controler)
 #endregion
 
-morte = 0;
-state = "apear";
-colisores = [obj_parede,obj_grude,obj_par_colisor];
-inimigo = [obj_pop_up,obj_aviso,obj_xis]
+#region estado/arrays
 
+	morte = 0;
+	state = "apear";
+	colisores = [obj_parede,obj_grude,obj_par_colisor];
+	inimigo = [obj_pop_up,obj_aviso,obj_xis]
+	altura_certa = 0;
+	
+#endregion
 
 #region hit
 
@@ -24,7 +30,6 @@ hit_strong = 10
 
 
 #endregion
-
 
 #region coyote
 
@@ -57,4 +62,4 @@ trampolin = 0
 
 
 
-
+ 

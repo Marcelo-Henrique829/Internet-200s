@@ -1,10 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-if(keyboard_check(ord("R")))
-{
-	game_restart()
-}
+if(keyboard_check(ord("R"))) game_restart()
 
 if(gerar_inimigos and alarm[0]<=0)
 {
@@ -16,14 +13,25 @@ if(gerar_inimigos and alarm[0]<=0)
 	}
 }
 
+show_debug_message(escala)
 
-show_debug_message(obj_camera.resolution_scale)
+if (sla) obj_camera.resolution_scale = lerp(obj_camera.resolution_scale,1.1,0.1)
 
-if sla
+
+if(global.score != score_pontos)
 {
-	obj_camera.resolution_scale = lerp(obj_camera.resolution_scale,1.1,0.1)
-
+	escala = lerp(escala,5,0.1)
+	color = c_green
+	
 }
+if(escala>1)
+{
+	score_pontos = global.score	
+	escala = lerp(escala,1,0.1)
+	
+}
+if(escala<=1.05) color = c_white
+
 
 
 

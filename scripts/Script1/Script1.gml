@@ -48,8 +48,8 @@ function scr_end_animation(_sprite)
 
 global.hit_dirh = 0;
 global.hit_dirv = 0;
-
 global.pendurado = 0
+global.score = 0;
 
 function scr_pou(_obj)
 {

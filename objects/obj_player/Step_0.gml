@@ -1,17 +1,16 @@
  #region inputs
 
-var _esquerda = keyboard_check(ord("A"))
-var _direita = keyboard_check(ord("D"))
-var _jump = keyboard_check(vk_space)
-var _fast = keyboard_check(vk_shift)
+var _esquerda = keyboard_check(ord("A")) or gamepad_axis_value(global.gamepad_id,gp_axislh) < - 0.25
+var _direita = keyboard_check(ord("D")) or gamepad_axis_value(global.gamepad_id,gp_axislh) >  0.25
+var _jump = keyboard_check(vk_space) or gamepad_button_check_pressed(global.gamepad_id,gp_face1)
+var _fast = keyboard_check(vk_shift) or gamepad_button_check(global.gamepad_id,gp_face3)
 
 #endregion
 
 var _chao = place_meeting(x,y+1,colisores)
 var _move = _direita - _esquerda
-
-
 var _hit = place_meeting(x,y,inimigo)
+
 
 if(hspd!=0) //este código faz a sprite do player virar para esquerda e para direita
 {
@@ -29,6 +28,9 @@ else
 	spd = def_spd;
 	
 }
+
+if(vspd>=22) altura_certa = 1;
+	
 
 coyte() //a função que roda o código do efeito coyote
 
@@ -72,12 +74,24 @@ switch(state)
 		{
 			state = "pendurado"
 		}
+		
+	
+		if(_chao and altura_certa)
+		{
+			instance_create_layer(x,y+sprite_height,layer,obj_smoke_jump_effect)
+			altura_certa = 0;
+			Obj_tremetala.treme = 20;
+
+		}
 	
 	}
 	break;
 	
 	case "jump":
 	{
+		
+		
+		
 		sprite_index = spr_stickman_jump
 		hspd = spd*_move
 		vspd = grv + vspd
@@ -91,6 +105,15 @@ switch(state)
 		{
 			state = "hit"
 		}
+		
+		if(_chao and altura_certa)
+		{
+			instance_create_layer(x,y+sprite_height-30,layer,obj_smoke_jump_effect)
+			altura_certa = 0;
+			Obj_tremetala.treme = 20;
+
+		}
+		
 		
 		
 		if(!_chao and place_meeting(x+sign(hspd),y,obj_grude))
@@ -107,7 +130,7 @@ switch(state)
 	{
 		
 		morte = 1
-		Obj_tremetala.treme = 20;
+		Obj_tremetala.treme = 50;
 		hit_time--
 		sprite_index = spr_stickman_hit
 		hspd = lengthdir_x(hit_strong,global.hit_dirh)
@@ -151,6 +174,7 @@ switch(state)
 		
 		if(image_index>=image_number-1)
 		{
+			global.score = 0;
 			room_restart()
 		}
 	}
@@ -202,7 +226,7 @@ if(morte)
 {
 	state = "morte"
 }
-show_debug_message(spd)
+show_debug_message(altura_certa)
 
 
 
