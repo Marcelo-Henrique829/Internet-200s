@@ -69,6 +69,7 @@
     {"name":"rm_menu","order":4,"path":"rooms/rm_menu/rm_menu.yy",},
     {"name":"rm_ponpon","order":1,"path":"rooms/rm_ponpon/rm_ponpon.yy",},
     {"name":"rm_stick_mob","order":5,"path":"rooms/rm_stick_mob/rm_stick_mob.yy",},
+    {"name":"rm_teste","order":6,"path":"rooms/rm_teste/rm_teste.yy",},
     {"name":"transicao","order":1,"path":"scripts/transicao/transicao.yy",},
     {"name":"seq_fade_out","order":1,"path":"sequences/seq_fade_out/seq_fade_out.yy",},
     {"name":"Botao_windows2","order":17,"path":"sprites/Botao_windows2/Botao_windows2.yy",},
@@ -156,6 +157,7 @@
     {"name":"spr_stickman_run","order":2,"path":"sprites/spr_stickman_run/spr_stickman_run.yy",},
     {"name":"spr_Stickplataforma","order":1,"path":"sprites/spr_Stickplataforma/spr_Stickplataforma.yy",},
     {"name":"spr_text_box_ponpon","order":3,"path":"sprites/spr_text_box_ponpon/spr_text_box_ponpon.yy",},
+    {"name":"spr_tile_plataforms","order":1,"path":"sprites/spr_tile_plataforms/spr_tile_plataforms.yy",},
     {"name":"spr_wallpapaer","order":2,"path":"sprites/spr_wallpapaer/spr_wallpapaer.yy",},
     {"name":"spr_windows_bar","order":3,"path":"sprites/spr_windows_bar/spr_windows_bar.yy",},
     {"name":"spr_windows_button","order":4,"path":"sprites/spr_windows_button/spr_windows_button.yy",},
@@ -163,5 +165,6 @@
     {"name":"spr_zip","order":16,"path":"sprites/spr_zip/spr_zip.yy",},
     {"name":"Sprite2","order":3,"path":"sprites/Sprite2/Sprite2.yy",},
     {"name":"srp_bckgres_dll_14_1009_7","order":19,"path":"sprites/srp_bckgres_dll_14_1009_7/srp_bckgres_dll_14_1009_7.yy",},
+    {"name":"tl_plataforms","order":1,"path":"tilesets/tl_plataforms/tl_plataforms.yy",},
   ],
 }

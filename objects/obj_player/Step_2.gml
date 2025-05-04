@@ -1,1 +1,1 @@
-scr_colision(colisores)
+scr_colision([tl_plataforma])

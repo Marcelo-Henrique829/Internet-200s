@@ -13,10 +13,10 @@
 #endregion
 
 #region estado/arrays
-
+	tl_plataforma = layer_tilemap_get_id("tl_plataformas")
 	morte = 0;
 	state = "apear";
-	colisores = [obj_parede,obj_grude,obj_par_colisor];
+	colisores = [obj_parede,obj_grude,obj_par_colisor,tl_plataforma];
 	inimigo = [obj_pop_up,obj_aviso,obj_xis]
 	altura_certa = 0;
 	

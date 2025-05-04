@@ -1,4 +1,4 @@
- #region inputs
+  #region inputs
 
 var _esquerda = keyboard_check(ord("A")) or gamepad_axis_value(global.gamepad_id,gp_axislh) < - 0.25
 var _direita = keyboard_check(ord("D")) or gamepad_axis_value(global.gamepad_id,gp_axislh) >  0.25
