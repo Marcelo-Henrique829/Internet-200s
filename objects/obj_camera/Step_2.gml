@@ -1,11 +1,8 @@
-             /// @description Insert description here
-// You can write your code in this editor
-
-global.view_height = resolution_height / resolution_scale; //definindo o tamanho do height da camera
-global.view_width = resolution_width / resolution_scale; // definindo o tamanho do width da camera
-
+ //global.view_width = resolution_width / resolution_scale; // definindo o tamanho do width da camera
+//global.view_height = resolution_height / resolution_scale; //definindo o tamanho do height da camera
 
 camera_set_view_size(view_camera[0],global.view_width, global.view_height); //aplicando o tamanho definido para a camera
+
 
 if (instance_exists(alvo)){
 	 	var x1 = alvo.x - global.view_width / 2; //variavel que vai seguir o x do jogador
@@ -22,4 +19,4 @@ if (instance_exists(alvo)){
 }
 
 
-
+resolution_scale = lerp(resolution_scale,resolution_def_scale,0.01)
