@@ -32,7 +32,7 @@
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
-  "solid":false,
+  "solid":true,
   "spriteId":{
     "name":"spr_ieaksie_dll_14_911_0",
     "path":"sprites/spr_ieaksie_dll_14_911_0/spr_ieaksie_dll_14_911_0.yy",

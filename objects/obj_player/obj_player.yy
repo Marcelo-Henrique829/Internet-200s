@@ -31,14 +31,14 @@
   "properties":[],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
-  "solid":false,
+  "solid":true,
   "spriteId":{
-    "name":"spr_stickman_iddle",
-    "path":"sprites/spr_stickman_iddle/spr_stickman_iddle.yy",
+    "name":"spr_player_iddle",
+    "path":"sprites/spr_player_iddle/spr_player_iddle.yy",
   },
   "spriteMaskId":{
-    "name":"spr_player_colision",
-    "path":"sprites/spr_player_colision/spr_player_colision.yy",
+    "name":"spr_player_iddle",
+    "path":"sprites/spr_player_iddle/spr_player_iddle.yy",
   },
   "visible":true,
 }

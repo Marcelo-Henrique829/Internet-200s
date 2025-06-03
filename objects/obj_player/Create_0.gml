@@ -2,7 +2,7 @@
 #region movimentação
 	vspd = 0;
 	hspd = 0;
-	grv = 0.7;
+	grv = 1;
 	
 	
 	def_spd = 5;
@@ -11,7 +11,7 @@
 
 	spd = def_spd;
 	dir = 0;
-	jump_force = 12;
+	jump_force = 17;
 	
 	instance_create_layer(0,0,layer,obj_input_controler)
 	
@@ -64,6 +64,18 @@ trampolin_time = trampolin_def_time;
 
 trampolin = 0
 
+trampolin_meet = function()
+{
+	var _trampolin = instance_place(x+sign(hspd)*3, y+sign(vspd)*3, obj_trampolin);
+	
+	if (_trampolin != noone) {
+	    // Agora posso acessar as variáveis dele!
+	    trampolin = _trampolin.id
+		state = "trampolin"
+	}
+
+}
+
 #endregion
 
 
@@ -86,6 +98,7 @@ move_and_fall = function()
 	hspd = spd*_move
 	vspd = grv + vspd
 }
+
 fall = function()
 {
 	vspd = grv + vspd
@@ -118,7 +131,7 @@ fall_strong = function()
 {
 	if(place_meeting(x,y+1,colisores) and altura_certa)
 		{
-			instance_create_layer(x,y+sprite_height,layer,obj_smoke_jump_effect)
+			instance_create_layer(x,y+sprite_height-80,layer,obj_smoke_jump_effect)
 			altura_certa = 0;
 			Obj_tremetala.treme = 20;
 
@@ -136,8 +149,39 @@ attack = function()
 	}
 }
 	
+
+	
+
 	
 	
+
+
+#endregion
+
+#region combo
+
+
+combo_action = false
+combo_def_time = 20;
+combo_time = combo_def_time
+
+combo = function()
+{
+	
+	if(combo_time>0)
+	{
+		combo_time--
+	}
+	else
+	{
+		combo_action = false
+	}
+
+		
+	 
+		
+		
+}
 
 
 #endregion

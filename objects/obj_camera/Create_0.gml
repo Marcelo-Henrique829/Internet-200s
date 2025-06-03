@@ -1,4 +1,4 @@
-  resolution_width = 640 // resolução padrão
+resolution_width = 640 // resolução padrão
 resolution_height = 360 // resolução padrão
 resolution_def_scale = 1//escala da resolução da camera
 resolution_scale = resolution_def_scale

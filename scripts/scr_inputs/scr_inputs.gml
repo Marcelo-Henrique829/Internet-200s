@@ -37,7 +37,7 @@ function scr_inputs(_bool)
 	_i.up = keyboard_check(ord("W")) or  keyboard_check(vk_up)
 	_i.down = keyboard_check(ord("W")) or keyboard_check(vk_down)
 	_i.run = keyboard_check(vk_lshift)
-	_i.attack = keyboard_check(ord("J"))
+	_i.attack = keyboard_check_pressed(ord("J")) or mouse_check_button_pressed(mb_left)
 
 
 	

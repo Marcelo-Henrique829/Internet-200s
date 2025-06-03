@@ -12,7 +12,7 @@
     "TileDataFormat":1,
   },
   "name":"tl_virus",
-  "out_columns":11,
+  "out_columns":40,
   "out_tilehborder":2,
   "out_tilevborder":2,
   "parent":{
@@ -32,11 +32,11 @@
   },
   "tileAnimationFrames":[],
   "tileAnimationSpeed":15.0,
-  "tileHeight":17,
+  "tileHeight":5,
   "tilehsep":0,
   "tilevsep":0,
-  "tileWidth":17,
+  "tileWidth":5,
   "tilexoff":0,
   "tileyoff":0,
-  "tile_count":121,
+  "tile_count":1600,
 }
