@@ -25,10 +25,11 @@
 	colisores = [obj_parede,obj_grude,obj_par_colisor,global.tl_plataforma];
 	inimigo = [obj_pop_up,obj_aviso,obj_xis,global.tl_virus]
 	altura_certa = 0;
+	attacking = 0
 	
 #endregion
 
-#region hit
+ #region hit
 
 hit_cooldown = 10;
 hit_time = hit_cooldown;
@@ -36,6 +37,45 @@ hit_strong = 10
 
 
 #endregion
+
+#region dash
+dash = {
+	
+	
+	_speed: 20,
+    def_cooldown: 30,
+    cooldown: 0, 
+    can: true
+	
+}
+can_dir = 1
+dashing = function()
+{
+	var _i = global.inputs
+	
+	
+	//resfriamento
+	if(!dash.can)
+	{
+		dash.cooldown--
+		if(dash.cooldown<=0)
+		{
+			dash.can = true
+		}
+	}
+	
+	if(_i.dash and dash.can)
+	{
+		state = "dash"
+		image_index = 0;
+	}
+
+	
+}
+	
+
+#endregion
+
 
 #region coyote
 
@@ -144,8 +184,8 @@ attack = function()
 	var _i = global.inputs
 	if(_i.attack)
 	{
-		state = "attack"
 		image_index = 0
+		state = "attack"
 	}
 }
 	

@@ -31,8 +31,9 @@ switch(state)
 		move_and_fall()//faz o player se movimentar
 		jump()// muda para o stado de pulo e pula
 		hit()//muda para o estado de hit
+		dashing()
 		fall_strong()// se o player cair de certa altura a tela treme
-		spd = lerp(spd,def_spd,0.5)
+		spd = lerp(spd,def_spd,1)
 		attack()
 		trampolin_meet()
 
@@ -60,7 +61,7 @@ switch(state)
 
 		hspd = _move *  spd
 		vspd = grv + vspd
-		
+		dashing()
 		jump()
 		hit()
 		fall_strong()
@@ -83,12 +84,13 @@ switch(state)
 	{
 		
 		sprite_index = spr_player_jump
-		
+		spd = lerp(spd,def_spd,0.07)
 		trampolin_meet()
-
+		dashing()
 		move_and_fall()
 		hit()
 		fall_strong()
+		attack()
 		
 		
 		if(image_index>= image_number -1 or _chao)
@@ -131,8 +133,7 @@ switch(state)
 			}
 			else
 			{
-				
-				state = "iddle"		
+				state = "iddle"
 			}
 		}
 		
@@ -224,7 +225,7 @@ switch(state)
 	break;
 	
 	
-	case "morte":
+ 	case "morte":
 	{
 		sprite_index = spr_player_death
 
@@ -244,9 +245,9 @@ switch(state)
 		
 		trampolin_time--;
 		hit()
+		dashing()
 		hspd = lengthdir_x(trampolin.force,trampolin.image_angle);
 		vspd = lengthdir_y(trampolin.force,trampolin.image_angle);
-		
 		if(trampolin_time<=0)
 		{
 			state = "iddle";
@@ -257,8 +258,26 @@ switch(state)
 	}
 	break;
 	
+	case "dash":
+	{
+		spd = dash._speed
+		sprite_index = spr_player_dash
+		hit()
+		fall()
+		jump()
+		trampolin_meet()		
+		hspd = lengthdir_x(spd,dir)
+		if(image_index >= image_number-1)
+		{
+			dash.cooldown = dash.def_cooldown
+			dash.can = false
+			state = "iddle"
+		}
+		
+	}
+	break;
+	
 }
-
 
 if(morte)
 {

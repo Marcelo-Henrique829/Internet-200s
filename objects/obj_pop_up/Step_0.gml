@@ -1,16 +1,9 @@
 /// @description Insert description here
 // You can write your code in this editor
-scr_pou(obj_pop_up)
 
 
-if(place_meeting(x,y,obj_cursor))
-{
-	if(mouse_check_button_pressed(mb_left))
-	{
-		state = "hit"
-		life--
-	}
-}
+
+if(place_meeting(x,y,obj_attack)) state = "hit"
 
 
 if(life<=0)

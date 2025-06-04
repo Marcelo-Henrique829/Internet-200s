@@ -14,7 +14,8 @@ global.inputs = {
 	up:false,
 	down:false,
 	run:false,
-	attack:false
+	attack:false,
+	dash:false
 }
 	
  player_cord = {
@@ -30,14 +31,15 @@ function scr_inputs(_bool)
 	
 	var _i = global.inputs
 	
-	_i.left = keyboard_check(ord("A")) or keyboard_check(vk_left)
-	_i.right = keyboard_check(ord("D")) or keyboard_check(vk_right)
-	_i.jump = keyboard_check_pressed(vk_space)
+	_i.left = keyboard_check(ord("A")) or keyboard_check(vk_left) or gamepad_axis_value(global.gamepad_id,gp_axislh) < -0.5;
+	_i.right = keyboard_check(ord("D")) or keyboard_check(vk_right) or gamepad_axis_value(global.gamepad_id,gp_axislh) > 0.5
+	_i.jump = keyboard_check_pressed(vk_space) or gamepad_button_check_pressed(global.gamepad_id,gp_face1)
 	_i.interact = keyboard_check_pressed(vk_enter)
 	_i.up = keyboard_check(ord("W")) or  keyboard_check(vk_up)
 	_i.down = keyboard_check(ord("W")) or keyboard_check(vk_down)
-	_i.run = keyboard_check(vk_lshift)
-	_i.attack = keyboard_check_pressed(ord("J")) or mouse_check_button_pressed(mb_left)
+	_i.run = keyboard_check(vk_lshift)  or gamepad_button_check(global.gamepad_id,gp_face4)
+	_i.attack = keyboard_check_pressed(ord("J")) or mouse_check_button_pressed(mb_left)  or gamepad_button_check_pressed(global.gamepad_id,gp_face3)
+	_i.dash = keyboard_check_pressed(ord("L"))  or gamepad_button_check_pressed(global.gamepad_id,gp_face2)
 
 
 	
